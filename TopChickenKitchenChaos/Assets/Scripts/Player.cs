@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 7f;
 
+    private bool isWalking;
     private void Update()
     {
         Vector2 inputVector = new Vector2(0, 0);
@@ -36,6 +37,8 @@ public class Player : MonoBehaviour
         Vector3 moveDirection = new Vector3(inputVector.x, 0f, inputVector.y);
         transform.position += moveDirection * Time.deltaTime * _moveSpeed;
 
+        isWalking = moveDirection != Vector3.zero;
+
         //transform.rotation
         //transform.eulerAngles
         //transform.LookAt
@@ -49,5 +52,10 @@ public class Player : MonoBehaviour
 
 
         Debug.Log(Time.deltaTime);
+    }
+
+    public bool IsWalking()
+    {
+        return isWalking;
     }
 }
