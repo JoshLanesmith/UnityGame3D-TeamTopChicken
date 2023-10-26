@@ -9,6 +9,8 @@ public class ClearCounter : MonoBehaviour
     [SerializeField] private KitchenObjectSO kitchenObjectSO; 
     [SerializeField] private Transform counterTopPoint;
     [SerializeField] private ClearCounter secondClearCounter;
+    
+    
     [SerializeField] private bool testing;
 
     private KitchenObject kitchenObject;
@@ -31,9 +33,8 @@ public class ClearCounter : MonoBehaviour
         if (kitchenObject == null)
         {
             Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab, counterTopPoint);
-            kitchenObjectTransform.localPosition = Vector3.zero;
-            kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
-            kitchenObject.SetClearCounter(this);
+            kitchenObjectTransform.GetComponent<KitchenObject>().SetClearCounter(this);
+
         }
         else
         {
@@ -45,4 +46,31 @@ public class ClearCounter : MonoBehaviour
         //Debug.Log(kitchenObjectTransform.GetComponent<KitchenObject>().GetKitchenObjectSO().objectName);
         //the type we resopond accoring to prefabs
     }
+
+    public Transform GetKitchenObjectFollowTransform() 
+    {
+        return counterTopPoint;
+    }
+    // Modifying position
+    // To set changing SO into changed table and previous table make empty 
+    public void SetKitchenObject(KitchenObject kitchenObject)
+    {
+        this.kitchenObject = kitchenObject;
+    }
+
+    public KitchenObject GetKitchenObject() 
+    { 
+        return kitchenObject;
+    }
+
+    public void ClearKitchenObject()
+    {
+        kitchenObject = null;
+    }
+
+    // method for checking whether counter has no kitchenObject
+    public bool HasKitchenObject() {
+        return kitchenObject != null;
+    }
+
 }
