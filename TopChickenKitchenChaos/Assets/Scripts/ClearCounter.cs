@@ -3,42 +3,46 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class ClearCounter : MonoBehaviour
+public class ClearCounter : MonoBehaviour, IKitchenObjectParent
 {
     // Reference
     [SerializeField] private KitchenObjectSO kitchenObjectSO; 
     [SerializeField] private Transform counterTopPoint;
-    [SerializeField] private ClearCounter secondClearCounter;
-    
-    
-    [SerializeField] private bool testing;
 
     private KitchenObject kitchenObject;
 
+    // REMOVE WHEN PUSHING PLAYER PICKUP LESSON
+    [SerializeField] private ClearCounter secondClearCounter;
+    [SerializeField] private bool testing;
+
+    // REMOVE WHEN PUSHING PLAYER PICKUP LESSON
     private void Update()
     {
         if (testing && Input.GetKeyDown(KeyCode.T))
         {
             if (kitchenObject != null)
             {
-                kitchenObject.SetClearCounter(secondClearCounter);
+                kitchenObject.SetKitchenObjectParent(secondClearCounter);
             }
 
         }
     }
-    public void Interact()
+
+    // SET PLAYER TO IMPLEMENT IKitchenObjectParent and pass player as perameter
+    public void Interact(Player player)
     {
         //Debug.Log("Interact!");
         //Transform and locate in the top of the table
         if (kitchenObject == null)
         {
             Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab, counterTopPoint);
-            kitchenObjectTransform.GetComponent<KitchenObject>().SetClearCounter(this);
+            kitchenObjectTransform.GetComponent<KitchenObject>().SetKitchenObjectParent(this);
 
         }
         else
         {
-            Debug.Log(kitchenObject.GetClearCounter());
+            //UNCOMMENT BELOW AFTER MAKING PLAYER A CHILD OF INTERFACE
+            //kitchenObject.SetKitchenObjectParent();
         }
        
 
