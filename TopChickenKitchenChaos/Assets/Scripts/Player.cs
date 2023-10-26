@@ -153,8 +153,6 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         }
         isWalking = moveDirection != Vector3.zero;
 
-        isWalking = moveDirection != Vector3.zero;
-
         //transform.rotation
         //transform.eulerAngles
         //transform.LookAt
