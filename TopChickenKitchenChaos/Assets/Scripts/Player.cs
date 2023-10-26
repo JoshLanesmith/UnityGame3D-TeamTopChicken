@@ -6,13 +6,8 @@ using UnityEngine.EventSystems;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 7f;
-<<<<<<< HEAD
-
-    private bool isWalking;
-=======
     [SerializeField] private GameInput _gameInput;
     [SerializeField] private bool isWalking;
->>>>>>> JindoBranch
     private void Update()
     {
         Vector2 inputVectorTwo = _gameInput.GetMovementVectorNormalized();
@@ -78,11 +73,6 @@ public class Player : MonoBehaviour
 
         float rotateSpeed = 10f;
         transform.forward = Vector3.Slerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
-    }
-
-    public bool IsWalking()
-    {
-        return isWalking;
     }
 
     public bool IsWalking()
