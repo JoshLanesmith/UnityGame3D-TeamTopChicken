@@ -274,6 +274,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 46, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &325323529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325323530}
+  - component: {fileID: 325323531}
+  m_Layer: 0
+  m_Name: GameInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325323530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325323529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &325323531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325323529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083261d792b87c041a5c57bed32c3161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> JindoBranch
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!114 &635899252 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4685421990640106351, guid: abcb6047961199e4b88f87909d8e4155,
@@ -663,6 +711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3ab7e9caa7426428a3f425ec819ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> JindoBranch
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +778,11 @@ PrefabInstance:
     - target: {fileID: 3294758251327466532, guid: 1c5dda3c7cd3cf742afcade5419faeab,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -1.279335
+=======
+      value: 0
+>>>>>>> JindoBranch
       objectReference: {fileID: 0}
     - target: {fileID: 3294758251327466532, guid: 1c5dda3c7cd3cf742afcade5419faeab,
         type: 3}
@@ -738,7 +792,11 @@ PrefabInstance:
     - target: {fileID: 3294758251327466532, guid: 1c5dda3c7cd3cf742afcade5419faeab,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 2.9217777
+=======
+      value: 0
+>>>>>>> JindoBranch
       objectReference: {fileID: 0}
     - target: {fileID: 3294758251327466532, guid: 1c5dda3c7cd3cf742afcade5419faeab,
         type: 3}
@@ -864,7 +922,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609747297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 1.279335, y: 0.8921099, z: -2.9217777}
+=======
+  m_LocalPosition: {x: 0, y: 0.8921099, z: 0}
+>>>>>>> JindoBranch
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -885,6 +947,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 7
+<<<<<<< HEAD
+=======
+  _gameInput: {fileID: 325323531}
+  isWalking: 1
+>>>>>>> JindoBranch
 --- !u!1 &1615492559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,11 +1072,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c9e091907b992084c9e587500c52db89,
         type: 2}
+<<<<<<< HEAD
     - target: {fileID: 4685421990640106351, guid: abcb6047961199e4b88f87909d8e4155,
         type: 3}
       propertyPath: secondClearCounter
       value: 
       objectReference: {fileID: 635899252}
+=======
+>>>>>>> JindoBranch
     - target: {fileID: 5998912113360423522, guid: abcb6047961199e4b88f87909d8e4155,
         type: 3}
       propertyPath: m_Name
