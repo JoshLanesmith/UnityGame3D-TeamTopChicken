@@ -123,6 +123,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &72418468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716441187059593281, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787255264114871008, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlatesCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666378822231187635, guid: da3ef4b196729344da1e8bfc8af39d7b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da3ef4b196729344da1e8bfc8af39d7b, type: 3}
 --- !u!114 &84487685 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3355969272985514506, guid: de1ed13ff941a954c8a2837826e86cac,
@@ -205,7 +283,7 @@ Transform:
   m_Children:
   - {fileID: 621855482}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 46, y: 0, z: 0}
 --- !u!1 &325323529
 GameObject:
@@ -237,7 +315,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325323531
 MonoBehaviour:
@@ -773,7 +851,7 @@ PrefabInstance:
     - target: {fileID: 3700611509069726261, guid: 7a6d9918bf41a6448a2c052107d59e4d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3700611509069726261, guid: 7a6d9918bf41a6448a2c052107d59e4d,
         type: 3}
@@ -1242,6 +1320,12 @@ PrefabInstance:
       propertyPath: baseCounter
       value: 
       objectReference: {fileID: 1961316475}
+    - target: {fileID: 7020876035820190801, guid: 7a6d9918bf41a6448a2c052107d59e4d,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 73035d937b2b5304f9783d12e53f0762,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
