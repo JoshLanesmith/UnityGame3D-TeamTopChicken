@@ -22,8 +22,49 @@ public class Player : MonoBehaviour
         //transform.position += (Vector3)inputVector;
 
         Vector3 moveDirection = new Vector3(inputVectorTwo.x, 0f, inputVectorTwo.y);
-        transform.position += moveDirection * _moveSpeed * Time.deltaTime;
 
+        float moveDistance = _moveSpeed * Time.deltaTime;
+        float playerRadius = 0.7f;
+        float playerHeight = 2f;
+        bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirection, moveDistance);
+
+        if (!canMove)
+        {
+            // Cannot move towards moveDirection
+
+            // Attemp only X movement
+            Vector3 moveDirectionX = new Vector3(moveDirection.x, 0, 0).normalized;
+            canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionX, moveDistance);
+
+            if (canMove)
+            {
+                // Can move only on the X
+                moveDirection = moveDirectionX;
+            }
+            else
+            {
+                // Cannot move only on the X
+
+                // Attempt only Z movement
+                Vector3 moveDirectionZ = new Vector3(0, 0, moveDirection.z).normalized;
+                canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionZ, moveDistance);
+                if (canMove)
+                {
+                    // Can move only on the Z
+                    moveDirection = moveDirectionZ;
+                }
+                else
+                {
+                    // Cannot move in any direction
+                }
+            }
+
+        }
+        else if (canMove)
+        {
+            transform.position += moveDirection * moveDistance;
+
+        }
         isWalking = moveDirection != Vector3.zero;
 
         isWalking = moveDirection != Vector3.zero;
