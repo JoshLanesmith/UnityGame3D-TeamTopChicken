@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-public class ClearCounter : BaseCounter
+public class CuttingCounter : BaseCounter
 {
-    // Reference
-    [SerializeField] private KitchenObjectSO kitchenObjectSO;
-
     public override void Interact(Player player)
     {
         if (!HasKitchenObject())
@@ -37,5 +33,4 @@ public class ClearCounter : BaseCounter
             }
         }
     }
-
 }
