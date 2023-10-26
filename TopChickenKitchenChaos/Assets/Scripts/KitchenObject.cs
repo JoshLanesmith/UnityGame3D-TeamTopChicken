@@ -20,8 +20,6 @@ public class KitchenObject : MonoBehaviour
             this.clearCounter.ClearKitchenObject();
         }
         this.clearCounter = clearCounter;
-        // change kitchen object in clearCounter
-        clearCounter.SetKitchenObject(this);
 
         // check whether counter has kitchenObject or not
         // It can't be execute!! just for error checking
@@ -29,6 +27,11 @@ public class KitchenObject : MonoBehaviour
         {
             Debug.LogError("Counter already has a KitchenObject!!");
         }
+
+        // change kitchen object in clearCounter
+        clearCounter.SetKitchenObject(this);
+
+        
         // Setting for moving prefab to another counter and make empty for previous counter
         transform.parent = clearCounter.GetKitchenObjectFollowTransform(); 
         transform.localPosition = Vector3.zero;

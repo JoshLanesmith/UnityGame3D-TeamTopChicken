@@ -28,13 +28,11 @@ public class ClearCounter : MonoBehaviour
     }
     public void Interact()
     {
-        //Debug.Log("Interact!");
         //Transform and locate in the top of the table
         if (kitchenObject == null)
         {
             Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab, counterTopPoint);
             kitchenObjectTransform.GetComponent<KitchenObject>().SetClearCounter(this);
-
         }
         else
         {
