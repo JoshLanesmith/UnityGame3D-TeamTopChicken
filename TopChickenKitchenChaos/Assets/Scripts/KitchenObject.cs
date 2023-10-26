@@ -20,14 +20,12 @@ public class KitchenObject : MonoBehaviour
             this.kitchenObjectParent.ClearKitchenObject();
         }
         this.kitchenObjectParent = kitchenObjectParent;
-        // change kitchen object in clearCounter
-        kitchenObjectParent.SetKitchenObject(this);
 
         // check whether counter has kitchenObject or not
         // It can't be execute!! just for error checking
         if (kitchenObjectParent.HasKitchenObject())
         {
-            Debug.LogError("Counter already has a KitchenObject!!");
+            Debug.LogError("IKitchenObjectParent already has a KitchenObject!!");
         }
 
         kitchenObjectParent.SetKitchenObject(this);
