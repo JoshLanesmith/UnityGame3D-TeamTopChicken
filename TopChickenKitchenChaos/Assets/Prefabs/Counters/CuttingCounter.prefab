@@ -355,6 +355,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1900294702461169309}
     m_Modifications:
+    - target: {fileID: 1653297035828399080, guid: d72bee846803d074784ffb8f64e993ca,
+        type: 3}
+      propertyPath: cuttingCounter
+      value: 
+      objectReference: {fileID: 206134000709695466}
     - target: {fileID: 2513651689412138050, guid: d72bee846803d074784ffb8f64e993ca,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -468,7 +473,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4589716710238282922, guid: d72bee846803d074784ffb8f64e993ca,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6669165227882629971}
+      addedObject: {fileID: 5928663886054408476}
   m_SourcePrefab: {fileID: 100100000, guid: d72bee846803d074784ffb8f64e993ca, type: 3}
 --- !u!1 &2243697250823765229 stripped
 GameObject:
@@ -488,7 +493,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8019894458465046596}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6669165227882629971
+--- !u!114 &5928663886054408476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
