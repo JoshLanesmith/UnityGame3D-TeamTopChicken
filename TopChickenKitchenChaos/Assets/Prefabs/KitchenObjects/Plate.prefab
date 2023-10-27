@@ -52,6 +52,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4b194620cc3875b47bd86f455c0f582d, type: 2}
   - {fileID: 11400000, guid: 674877c8964c66d449a13cb1b808693a, type: 2}
   - {fileID: 11400000, guid: 9254db444ac0e784b9191547b9d71499, type: 2}
+  - {fileID: 11400000, guid: 62a7006595b895248b02d45564eb593d, type: 2}
+  - {fileID: 11400000, guid: 9556aa49abbcb1b4ab19a2eac562e6f8, type: 2}
   - {fileID: 11400000, guid: 2aeb54dff849cdd4f83e79dbaddafff8, type: 2}
 --- !u!1 &2785816521876224708
 GameObject:
@@ -532,7 +534,7 @@ PrefabInstance:
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[1].kitchenObjectSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4b194620cc3875b47bd86f455c0f582d,
+      objectReference: {fileID: 11400000, guid: 62a7006595b895248b02d45564eb593d,
         type: 2}
     - target: {fileID: 3372208638725661155, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
@@ -556,7 +558,7 @@ PrefabInstance:
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[5].kitchenObjectSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4b194620cc3875b47bd86f455c0f582d,
+      objectReference: {fileID: 11400000, guid: 9556aa49abbcb1b4ab19a2eac562e6f8,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
